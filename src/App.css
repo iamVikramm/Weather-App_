@@ -1,38 +1,139 @@
-.App {
+body{
+  background-color: #5BC0F8;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/********************** Form Outer Div *********************/
+.formOuter{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/************************** Heading ****************/
+.heading{
+  text-align: start;
+}
+.heading h3{
+  margin: 2%;
+  font-size: 1.5rem;
+  padding: 2.5%;
+  border-bottom: 1px solid gray;
+  color: #5BC0F8;
+}
+
+.formInner{
+  padding: 1%;
+  height: 12rem;
+  width: 20rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/****************************** Form **********************/
+
+form{
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.input{
+  border: none;
+  outline: none;
+  border: 1px solid gray;
+  padding: 2%;
+  width: 75%;
+  margin-top: 5%;
+  margin-bottom: 0%;
+  border-radius: 3px;
+  font-size: 1rem;
+  
+}
+.input::placeholder{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.submit{
+  border: none;
+  outline: none;
+  border: 1px solid gray;
+  padding: 2%;
+  width: 80%;
+  background-color: #5BC0F8;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  height: 2.5rem;
+  font-size: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*********************** Searched City ***********************/
+
+.searched-city-outer{
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.searched-city-inner{
+  
+  height: 28rem;
+  width: 21rem;
+  background-color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.searched-city-top-inner{
+  display: flex;
+  align-items: center;
+  padding: 1.5%;
+  padding-left: 5%;
+  border-bottom: 1px solid gray;
+  color: #5BC0F8;
+}
+.searched-city-top-inner h3{
+  margin: 3%;
+  margin-left: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searched-city-top-inner i{
+  cursor: pointer;
+}
+
+.weather-png{
+  height: 8.5rem;
+}
+
+.searched-city-middle{
+  padding: 2%;
+  font-family:sans-serif;
+  border-bottom: 1px solid gray;
+}
+
+.searched-city-bottom{
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot-left{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid gray;
+}
+.foot-right{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
