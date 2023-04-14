@@ -126,7 +126,7 @@ body{
   align-items: center;
   padding: 1.5%;
   padding-left: 5%;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid lightgray;
   color: #47B5FF;
 }
 .searched-city-top-inner h3{
@@ -145,7 +145,7 @@ body{
 .searched-city-middle{
   padding: 2%;
   font-family:sans-serif;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid lightgray;
 }
 
 .searched-city-bottom{
@@ -160,7 +160,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid gray;
+  border-right: 1px solid lightgray;
 }
 .foot-right{
   height: 100%;
