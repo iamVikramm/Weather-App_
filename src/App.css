@@ -126,7 +126,7 @@ body{
   align-items: center;
   padding: 1.5%;
   padding-left: 5%;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1.7px solid lightgray;
   color: #47B5FF;
 }
 .searched-city-top-inner h3{
@@ -145,7 +145,7 @@ body{
 .searched-city-middle{
   padding: 2%;
   font-family:sans-serif;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1.7px solid lightgray;
 }
 
 .searched-city-bottom{
@@ -153,6 +153,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  padding-bottom: 10rem;
 }
 .foot-left{
   height: 100%;
@@ -160,12 +162,15 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid lightgray;
+  
 }
 .foot-right{
-  height: 100%;
+  height: 99.9%;
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  border-left: 1.5px solid lightgray;
+  
 }
