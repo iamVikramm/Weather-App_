@@ -1,5 +1,5 @@
 body{
-  background-color: #5BC0F8;
+  background-color: #47B5FF;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -14,65 +14,97 @@ body{
 
 }
 
+.formInner{
+  height:15rem;
+  width: 22rem;
+  background-color: #fff;
+  border-radius: 7px;
+}
+
 /************************** Heading ****************/
 .heading{
-  text-align: start;
-}
-.heading h3{
-  margin: 2%;
-  font-size: 1.5rem;
-  padding: 2.5%;
-  border-bottom: 1px solid gray;
-  color: #5BC0F8;
-}
-
-.formInner{
   padding: 1%;
-  height: 12rem;
-  width: 20rem;
-  background-color: #fff;
-  border-radius: 10px;
+  border-bottom: 2px solid lightgray;
+}
+.heading h4{
+  margin: 3% 7%;
+  font-size: 1.2rem;
+  color: #47B5FF;
 }
 
-/****************************** Form **********************/
+/*********************** Input_Location ************************/
 
-form{
+.input-location{
   padding: 2%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+}
+
+.form{
+  margin: 5% 5% 3% 5%;
+  padding: .5% 2%;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+}
+.form input{
+  padding: 2% 0;
+  width: 16.4rem;
+  height: 1.8rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+.form input::placeholder{
+  text-align: center;
+  color: rgb(180, 170, 170);
+}
+.devicelocation{
+  margin: 3%;
+}
+
+.devicelocation button{
+  width: 17.5rem;
+  height: 2.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  background-color: #47B5FF;
+  outline: none;
+}
+
+.border{
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.input{
-  border: none;
-  outline: none;
-  border: 1px solid gray;
-  padding: 2%;
-  width: 75%;
-  margin-top: 5%;
-  margin-bottom: 0%;
-  border-radius: 3px;
-  font-size: 1rem;
-  
+.or{
+  position: relative;
+  color: rgb(194, 185, 185);
+
 }
-.input::placeholder{
-  text-align: center;
+.or::before{
+  content: "";
+  position: absolute;
+  top:.6rem;
+  right: 2rem;
+  height: .7px;
+  width: 7.1rem;
+  border-bottom: 2px solid lightgray;
 }
 
-.submit{
-  border: none;
-  outline: none;
-  border: 1px solid gray;
-  padding: 2%;
-  width: 80%;
-  background-color: #5BC0F8;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 3px;
-  height: 2.5rem;
-  font-size: 1rem;
+.or::after{
+  content: "";
+  position: absolute;
+  top:.6rem;
+  left: 2rem;
+  height: .7px;
+  width: 7.1rem;
+  border-bottom: 2px solid lightgray;
 }
-
 
 /*********************** Searched City ***********************/
 
@@ -95,7 +127,7 @@ form{
   padding: 1.5%;
   padding-left: 5%;
   border-bottom: 1px solid gray;
-  color: #5BC0F8;
+  color: #47B5FF;
 }
 .searched-city-top-inner h3{
   margin: 3%;

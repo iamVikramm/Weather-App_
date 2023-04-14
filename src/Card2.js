@@ -62,7 +62,7 @@ function Card2(props) {
                     </div>
                     <div className='foot-right'>
                         <div style={flexStyles}>
-                            <i style={{fontSize:"1.8rem",margin:"5%",color:"#5BC0F8"}} class="fa-solid fa-droplet"></i>
+                            <i style={{fontSize:"1.8rem",margin:"5%",color:"#5BC0F8"}} className="fa-solid fa-droplet"></i>
                         </div>
                         <div style={{flexDirection:"column"}}>
                             <p style={{margin:"0"}}>{humidity}%</p>

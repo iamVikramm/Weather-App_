@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import getData from './Fetch';
 import Card2 from './Card2';
+import { getDeviceLocation } from './Fetch';
 
 function Card(props) {
 
@@ -34,6 +35,28 @@ function Card(props) {
         
     }
 
+    // Get Device Location
+
+    function showPositions(position){
+        const x = position.coords.latitude;
+        const y = position.coords.longitude;
+        
+        const data = getDeviceLocation(x,y);
+        data.then(function(res){
+            if(res.cod === 200){
+                const inner = [res]
+                setSearchResult(inner)
+                setInputValue("")
+            }else{
+                alert("Cannot fetch your device location")
+            }
+        })
+    }
+
+    function handleDeviceLocation(){ 
+        navigator.geolocation.getCurrentPosition(showPositions)
+    }
+
     // Managing back click
     function handleBack(){
         setSearchResult([]);
@@ -44,12 +67,22 @@ function Card(props) {
         return (
             <div className='formOuter'>
                 <div className='formInner'>
-                    <div className='heading'><h3>Weather App</h3></div>
-                    <form onSubmit={handleSubmit}>
-                        <input className='input' placeholder='Enter city name' onChange={handleOnChange} value={inputValue} type='text'></input>
-                        <br></br>
-                        <input className='submit' type='submit' value="Search City"></input>
-                    </form>
+                    <div className='heading'>
+                        <h4>Weather App</h4>
+                    </div>
+                    <div className='input-location'>
+                        <div className='form'>
+                            <form onSubmit={handleSubmit}>
+                                <input value={inputValue} onChange={handleOnChange} placeholder='Enter city name'></input>
+                            </form>
+                        </div>
+                        <div className='border'> 
+                            <div className='or'>or</div>                            
+                        </div>
+                        <div className='devicelocation'>
+                            <button onClick={handleDeviceLocation}>Get Device Location</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
